@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root{
+  --rosa-suave:#F7B7C6;
+  --rosa-medio:#F28BA8;
+  --rojo-suave:#F06A6A;
+  --blanco:#ffffff;
+  --gris:#444;
+  --fondo:#FAFAFA;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:var(--fondo);
+  color:var(--gris);
+  line-height:1.7;
+}
+
+/* ================= HERO UNIFICADO ================= */
+.hero{
+  position:relative;
+  padding:100px 10%;
+  text-align:center;
+  color:white;
+  background-size:cover;
+  background-position:center;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    135deg,
+    rgba(247,183,198,.75),
+    rgba(240,106,106,.75)
+  );
+}
+
+.hero *{
+  position:relative;
+  z-index:2;
+}
+
+.hero h1{
+  font-size:3rem;
+  font-weight:600;
+}
+
+.hero p{
+  font-size:1.2rem;
+  margin-top:10px;
+}
+
+/* ===== IMÁGENES DIFERENTES PERO MISMO ESTILO ===== */
+.hero.inicio{
+  background-image:url("https://images.unsplash.com/photo-1520974735194-6c4d2a6a1b20?auto=format&fit=crop&w=1600&q=80");
+}
+
+.hero.trastornos{
+  background:linear-gradient(
+    135deg,
+    rgba(247,183,198,0.95),
+    rgba(240,106,106,0.95)
+  );
+}
+
+.hero.orientacion{
+  background:linear-gradient(
+    135deg,
+    rgba(247,183,198,0.95),
+    rgba(240,106,106,0.95)
+  );
+}
+
+
+.hero.ayuda{
+  background-image:url("https://images.unsplash.com/photo-1520975698519-59c0f0d9c6a1?auto=format&fit=crop&w=1600&q=80");
+}
+
+/* ================= NAV ================= */
+nav{
+  background:white;
+  padding:15px 10%;
+  text-align:center;
+  box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+nav a{
+  text-decoration:none;
+  color:#C0395A;
+  margin:0 15px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:black;
+}
+
+/* ================= SECCIONES ================= */
+section{
+  padding:70px 10%;
+}
+
+.bloque{
+  background:white;
+  padding:40px;
+  border-radius:25px;
+  margin-bottom:40px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.card img{
+  width:100%;
+  border-radius:15px;
+  margin-bottom:15px;
+}
+
+/* ================= AYUDA URGENTE ================= */
+.urgente{
+  background:#FDEAEA;
+  border-left:8px solid var(--rojo-suave);
+  padding:40px;
+  border-radius:20px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#EEE;
+  text-align:center;
+  padding:25px;
+  font-size:.9rem;
+}

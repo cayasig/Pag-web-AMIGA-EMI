@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ayuda Urgente</title>
+  <link rel="stylesheet" href="estilos.css">
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* ==================== EFECTO HOVER EN CARDS ==================== */
+    .grid .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .grid .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    /* ==================== TEXTO EXTRA AYUDA ==================== */
+    .ayuda-info {
+      background: #FCF3CF;
+      padding: 30px;
+      border-radius: 20px;
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    .ayuda-info h2 {
+      color: #B9770E;
+      margin-bottom: 15px;
+    }
+
+    .ayuda-info ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero ayuda">
+  <h1>Ayuda Urgente</h1>
+  <p>No estás solo, tu bienestar importa</p>
+</header>
+
+<nav>
+  <a href="inicio.html">Inicio</a>
+  <a href="trastornos.html">Trastornos</a>
+  <a href="orientacion.html">Orientación</a>
+  <a href="juegos.html">Juegos</a>
+  <a href="videos.html">Videos</a>
+  <a href="ayuda.html">Ayuda</a>
+</nav>
+
+<section>
+
+  <div class="urgente">
+    <h2>¿Necesitas ayuda urgente?</h2>
+    <p><strong>ECU 911</strong> – Atención inmediata ante crisis emocionales</p>
+    <p><strong>Ministerio de Salud Pública:</strong> 171 opción 6</p>
+    <p><strong>Confía – Apoyo emocional:</strong> 1800 335 486</p>
+  </div>
+
+  <!-- NUEVAS CARDS: Líneas de ayuda nacionales -->
+  <div class="grid" style="margin-top:30px; margin-bottom:30px;">
+    <!-- Línea de Ayuda Psicológica -->
+    <div class="card" style="background:#FDEBD0; text-align:center;">
+      <i class="fa-solid fa-headset fa-2x" style="color:#C0392B; margin-bottom:10px;"></i>
+      <h3>Línea de Ayuda Psicológica</h3>
+      <p><strong>Teléfono:</strong> 1800 335 486</p>
+      <p><strong>Horario:</strong> Lunes a Domingo, 08:00 - 22:00</p>
+      <p><strong>Servicio:</strong> Apoyo emocional, escucha activa y orientación psicológica</p>
+      <p style="margin-top:10px; font-weight:600; color:#C0392B;">Confidencial y Anónima</p>
+    </div>
+
+    <!-- Línea de Protección Infantil -->
+    <div class="card" style="background:#D6EAF8; text-align:center;">
+      <i class="fa-solid fa-child fa-2x" style="color:#2980B9; margin-bottom:10px;"></i>
+      <h3>Línea de Protección Infantil</h3>
+      <p><strong>Teléfono:</strong> 1800 DELITO (335486)</p>
+      <p><strong>Horario:</strong> Lunes a Domingo, 08:00 - 22:00</p>
+      <p><strong>Servicio:</strong> Atención inmediata ante situaciones de riesgo infantil y abuso</p>
+      <p style="margin-top:10px; font-weight:600; color:#2980B9;">Confidencial y Anónima</p>
+    </div>
+  </div>
+
+  <!-- BLOQUE: Información adicional sobre ayuda -->
+  <div class="ayuda-info">
+    <h2>Más información sobre apoyo y orientación emocional</h2>
+    <ul>
+      <li>El apoyo emocional no solo consiste en hablar, también en reconocer y validar tus emociones.</li>
+      <li>Los orientadores y profesionales ofrecen estrategias para manejar ansiedad, estrés y depresión.</li>
+      <li>Contar con una red de apoyo de familiares, amigos y docentes es clave para tu bienestar.</li>
+      <li>Las líneas de ayuda nacionales son gratuitas, confidenciales y pueden brindarte seguimiento y recursos adicionales.</li>
+      <li>Identificar señales de alerta temprana puede prevenir situaciones de riesgo y mejorar tu salud emocional.</li>
+    </ul>
+  </div>
+
+  <!-- BLOQUE: Recomendaciones para emergencias emocionales -->
+  <div class="bloque">
+    <h2>Recomendaciones para emergencias emocionales</h2>
+    <ul>
+      <li>Respira profundamente y busca un lugar seguro.</li>
+      <li>Habla con alguien de confianza inmediatamente.</li>
+      <li>Evita tomar decisiones impulsivas o riesgosas.</li>
+      <li>Recuerda que pedir ayuda es valiente y necesario.</li>
+    </ul>
+  </div>
+
+</section>
+<!-- BLOQUE: Sitios web recomendados en Ecuador -->
+<div class="bloque" style="background:#EAF2F8;">
+  <h2>Sitios web recomendados en Ecuador</h2>
+  <ul class="sitios-recomendados">
+    <li>
+      <a href="https://www.salud.gob.ec/" target="_blank">
+        <i class="fa-solid fa-circle-info"></i> Ministerio de Salud Pública - Programas de salud mental
+      </a>
+    </li>
+    <li>
+      <a href="https://www.confia.org.ec/" target="_blank">
+        <i class="fa-solid fa-circle-info"></i> Confía – Línea de apoyo emocional
+      </a>
+    </li>
+    <li>
+      <a href="https://www.inclusion.gob.ec/" target="_blank">
+        <i class="fa-solid fa-circle-info"></i> Secretaría de Inclusión Social - Recursos para adolescentes
+      </a>
+    </li>
+    <li>
+      <a href="https://www.dinapen.gob.ec/" target="_blank">
+        <i class="fa-solid fa-circle-info"></i> DINAPEN - Protección infantil y adolescente
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style>
+  .sitios-recomendados {
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+  }
+
+  .sitios-recomendados li {
+    margin-bottom:15px;
+    font-size:1rem;
+  }
+
+  .sitios-recomendados a {
+    text-decoration:none;
+    color:#C0392B;
+    transition:color 0.3s ease;
+  }
+
+  .sitios-recomendados a:hover {
+    color:#E74C3C;
+  }
+
+  .sitios-recomendados i {
+    margin-right:8px;
+    color:#C0392B;
+  }
+</style>
+
+<footer>
+  Apoyo emocional – Ecuador
+</footer>
+
+</body>
+</html>
